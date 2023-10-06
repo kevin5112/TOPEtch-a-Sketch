@@ -1,0 +1,25 @@
+.container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 960px;
+    height: 960px;
+}
+
+.flexRow {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.dBox {
+    border: 1px solid red;
+    flex: 1;
+    margin: 0px;
+}
+
+.grey-box {
+    background-color: grey;
+}
