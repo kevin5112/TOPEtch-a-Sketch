@@ -23,16 +23,17 @@ function createGrid(s) {
         container.appendChild(newDiv);
     }
     container.classList.add("gridExists");
+    draw();
 }
+
 
 function draw() {
     let eachBox = document.querySelectorAll(".dBox");
     eachBox.forEach(box => {
-        box.addEventListener("mouseover", (e) => {
-            e.target.classList.add("grey-box");
-        });
+        box.addEventListener("mouseover", (e) => e.target.classList.add("grey-box"))
     });
 }
+
 
 let sizeButton = document.querySelector(".setSize");
 sizeButton.addEventListener("click", () => {
@@ -44,10 +45,6 @@ sizeButton.addEventListener("click", () => {
     createGrid(userInput);
 });
 
-let drawButton = document.querySelector(".draw");
-drawButton.addEventListener("click", () => draw());
-
-
-
+createGrid(10);
 
 
